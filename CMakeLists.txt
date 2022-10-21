@@ -36,6 +36,8 @@ endif()
 # Add executable
 if(USE_ACC)
 	add_executable(test_ACC mpiTest.cxx)
+	add_executable(rma_ACC rmaTest.cxx)
 else()
 	add_executable(test_noACC mpiTest.cxx)
+	add_executable(rma_noACC rmaTest.cxx)
 endif()
